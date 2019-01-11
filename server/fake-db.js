@@ -37,8 +37,8 @@ class FakeDB {
         }];
     };
 
-    cleanDB(){
-        Rental.remove({});
+    async cleanDB(){
+        await Rental.remove({});
     }
 
     pushRentalsToDB() {
